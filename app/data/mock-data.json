@@ -14,9 +14,10 @@
       "profilePicture": "/images/julie.png"
     },
     "statistics": {
-      "totalDistance": "2250.2",
+      "totalDistance": 2250.2,
       "totalSessions": 348,
-      "totalDuration": 14625
+      "totalDuration": 14625,
+      "totalCalories": 28750
     },
     "weeklyGoal": 2
   },

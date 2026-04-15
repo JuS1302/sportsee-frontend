@@ -9,17 +9,17 @@
       "lastName": "Simon",
       "createdAt": "2025-01-01",
       "age": 32,
+      "gender": "female",
       "weight": 60,
       "height": 165,
-      "profilePicture": "/images/julie.png"
+      "profilePicture": "/images/julie.png",
+      "weeklyGoal": 2
     },
     "statistics": {
-      "totalDistance": 2250.2,
+      "totalDistance": "2250.2",
       "totalSessions": 348,
-      "totalDuration": 14625,
-      "totalCalories": 28750
-    },
-    "weeklyGoal": 2
+      "totalDuration": 14625
+    }
   },
   "userActivity": [
     {"date": "2025-01-04", "distance": 5.8, "duration": 38, "heartRate": {"min": 140, "max": 178, "average": 163}, "caloriesBurned": 422},

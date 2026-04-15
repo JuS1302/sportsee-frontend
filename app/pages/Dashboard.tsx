@@ -1,3 +1,9 @@
-export default function Login() {
-  return <h1>Dashboard</h1>
+import ProtectedRoute from "../components/ProtectedRoute"
+
+export default function Dashboard() {
+  return (
+    <ProtectedRoute>
+      <h1>Dashboard</h1>
+    </ProtectedRoute>
+  )
 }

@@ -1,3 +1,3 @@
-export default function Login() {
+export default function NotFound() {
   return <h1>404 - Page non trouvée</h1>
 }

@@ -7,7 +7,7 @@ interface InputProps {
 
 export default function Input({ label, type = "text", value, onChange }: InputProps) {
   return (
-    <div className="mb-4">
+    <div className="mb-8">
       <label className="text-sm text-gray-500 mb-1 block">{label}</label>
       <input
         type={type}

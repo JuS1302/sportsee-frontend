@@ -13,23 +13,25 @@ export default function Login() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!username || !password) return
-      handleLogin(username, password)
+    handleLogin(username, password)
   }
 
   return (
-    <div className="flex h-screen bg-[#F0F2FF]">
+    <div className="flex h-screen bg-background">
 
       {/* Partie gauche */}
       <div className="w-1/2 flex flex-col">
-        <div className="p-10">
+        <div className="p-[var(--spacing-page)]">
           <Logo />
         </div>
         <div className="flex-1 flex items-center justify-center">
           <Card className="w-[420px]">
-            <h1 className="text-blue-600 font-bold text-3xl mb-8">
+            <h1 className="text-primary text-heading-3 font-semibold leading-tight mb-8">
               Transformez <br /> vos stats en résultats
             </h1>
-            <h2 className="text-xl font-semibold mb-6">Se connecter</h2>
+            <h2 className="text-heading-4 font-medium mb-6">
+              Se connecter
+            </h2>
             <form onSubmit={handleSubmit}>
               <Input
                 label="Nom d'utilisateur"
@@ -43,7 +45,7 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
               {error && (
-                <p className="text-red-500 text-sm mb-4">{error}</p>
+                <p className="text-red-500 text-small mb-4">{error}</p>
               )}
               <Button
                 label="Se connecter"
@@ -51,21 +53,21 @@ export default function Login() {
                 isLoading={isLoading}
               />
             </form>
-            <p className="text-sm text-gray-500 mt-4 cursor-pointer hover:underline">
+            <p className="text-primary text-small mt-4 cursor-pointer hover:underline text-center">
               Mot de passe oublié ?
             </p>
           </Card>
         </div>
       </div>
 
-      {/* Partie droite — image */}
+      {/* Partie droite */}
       <div className="w-1/2 relative overflow-hidden">
         <img
-          src="public/images/running.jpg"
+          src="/images/running.jpg"
           alt="Coureurs"
           className="w-full h-full object-cover"
         />
-        <div className="absolute bottom-8 right-8 bg-white rounded-2xl p-4 max-w-[250px] text-sm text-gray-600 shadow">
+        <div className="absolute bottom-8 right-8 bg-white rounded-4xl p-4 max-w-[300px] shadow text-primary text-small text-center">
           Analysez vos performances en un clin d'œil, suivez vos progrès et atteignez vos objectifs.
         </div>
       </div>

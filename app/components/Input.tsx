@@ -7,13 +7,13 @@ interface InputProps {
 
 export default function Input({ label, type = "text", value, onChange }: InputProps) {
   return (
-    <div className="mb-8">
-      <label className="text-sm text-gray-500 mb-1 block">{label}</label>
+    <div className="mb-6">
+      <label className="text-small text-text-light mb-1 block font-regular">{label}</label>
       <input
         type={type}
         value={value}
         onChange={onChange}
-        className="w-full border border-gray-200 rounded-lg p-3 focus:outline-none focus:border-blue-400"
+        className="w-full border border-border rounded-input p-3 text-body focus:outline-none focus:border-primary"
       />
     </div>
   )

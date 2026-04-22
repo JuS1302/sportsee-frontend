@@ -24,7 +24,7 @@ export const api = {
     const response = await fetch(`${API_URL}/api/user-info`, {
       headers: { "Authorization": `Bearer ${token}` }
     })
-    if (!response.ok) throw new Error("Erreur")
+    if (!response.ok) throw new Error("Impossible de récupérer les infos du user")
     return response.json()
   },
 
@@ -36,7 +36,7 @@ export const api = {
       `${API_URL}/api/user-activity?startWeek=${startWeek}&endWeek=${endWeek}`,
       { headers: { "Authorization": `Bearer ${token}` } }
     )
-    if (!response.ok) throw new Error("Erreur")
+    if (!response.ok) throw new Error("Impossible de récupérer les activités du user")
     return response.json()
   }
 }

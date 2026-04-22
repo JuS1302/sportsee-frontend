@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useLogin } from "../hooks/useLogin"
 import Logo from "../components/Logo"
+import Header from "../components/Header"
 import Input from "../components/Input"
 import Button from "../components/Button"
 import Card from "../components/Card"
@@ -21,11 +22,11 @@ export default function Login() {
 
       {/* Partie gauche */}
       <div className="w-1/2 flex flex-col">
-        <div className="p-(--spacing-page)">
+        <Header>
           <Logo />
-        </div>
-        <div className="flex-1 flex items-center justify-center">
-          <Card className="w-[420px]">
+        </Header>
+        <div className="flex-1 flex items-center justify-start px-page">
+          <Card className="w-[400px]">
             <h1 className="text-primary text-heading-3 font-semibold leading-tight mb-8">
               Transformez <br /> vos stats en résultats
             </h1>
@@ -61,7 +62,7 @@ export default function Login() {
       </div>
 
       {/* Partie droite */}
-      <div className="w-1/2 relative overflow-hidden">
+      <div className="relative overflow-hidden">
         <img
           src="/images/running.jpg"
           alt="Coureurs"

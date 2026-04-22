@@ -12,7 +12,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-dark px-[var(--spacing-page)] py-[var(--spacing-navbar)] flex items-center justify-between">
+    <nav className="bg-dark px-(--spacing-page) py-(--spacing-navbar) flex items-center justify-between">
       <Logo />
       <div className="flex items-center gap-8">
         <Link to="/dashboard" className="text-white text-body hover:text-primary">

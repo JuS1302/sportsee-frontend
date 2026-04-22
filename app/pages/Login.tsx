@@ -21,7 +21,7 @@ export default function Login() {
 
       {/* Partie gauche */}
       <div className="w-1/2 flex flex-col">
-        <div className="p-[var(--spacing-page)]">
+        <div className="p-(--spacing-page)">
           <Logo />
         </div>
         <div className="flex-1 flex items-center justify-center">

@@ -46,7 +46,7 @@ export default function HeartRateChart({ sessions }: HeartRateChartProps) {
 
   return (
     <div>
-      <h3 className="text-red-500 font-bold text-xl mb-1">{avgBpm} BPM</h3>
+      <h3 className="text-red-500 text-xl mb-1">{avgBpm} BPM</h3>
       <p className="text-gray-400 text-sm mb-4">Fréquence cardiaque moyenne</p>
       <ResponsiveContainer width="100%" height={300}>
         <ComposedChart data={data}>

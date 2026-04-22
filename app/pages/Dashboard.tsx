@@ -29,7 +29,7 @@ export default function Dashboard() {
                   className="w-[104px] h-[117px] rounded-[10px] object-cover"
                 />
                 <div>
-                  <p className="text-heading-4 font-semibold">
+                  <p className="text-heading-4">
                     {userInfo.profile.firstName} {userInfo.profile.lastName}
                   </p>
                   <p className="text-text-light text-body">
@@ -54,7 +54,7 @@ export default function Dashboard() {
           <h2 className="text-heading-4 mb-6">Vos dernières performances</h2>
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-white rounded-card p-8 shadow-sm">
-              <WeeklyDistanceChart sessions={userActivity.sessions} />
+              <WeeklyDistanceChart weeklyDistance={userActivity.weeklyDistance} />
             </div>
             <div className="bg-white rounded-card p-8 shadow-sm">
               <HeartRateChart sessions={userActivity.sessions} />

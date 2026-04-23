@@ -35,8 +35,9 @@
   --font-weight-semibold: 600;
 
   /* Espacements */
-  --spacing-card: 4rem;       
-  --spacing-page: 16rem;      /* marge horizontale globale */
+  --spacing-card: 4rem;
+  --spacing-page: 18rem;      /* marge horizontale du contenu */
+  --spacing-header: 10rem;     /* marge horizontale du header */
   --spacing-navbar: 2rem;       /* 16px */
 
   /* Border radius */

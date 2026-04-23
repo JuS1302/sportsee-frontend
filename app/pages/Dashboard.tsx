@@ -45,6 +45,7 @@ export default function Dashboard() {
                   label=""
                   value={userInfo.statistics.totalDistance}
                   unit="km"
+                  icon={<i className="fa-solid fa-trophy text-2xl text-white" />}
                 />
               </div>
             </Card>

@@ -25,7 +25,7 @@ export default function Login() {
         <Header>
           <Logo />
         </Header>
-        <div className="flex-1 flex items-center justify-start px-page">
+        <div className="flex-1 flex items-center justify-start px-50">
           <Card className="w-[400px]">
             <h1 className="text-primary text-heading-3 font-semibold leading-tight mb-8">
               Transformez <br /> vos stats en résultats

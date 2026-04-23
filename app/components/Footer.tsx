@@ -2,7 +2,8 @@ import Logo from "./Logo"
 
 export default function Footer() {
   return (
-    <footer className="bg-white px-page py-navbar flex items-center justify-between">      <div className="flex items-center gap-4">
+    <footer className="bg-white px-header py-navbar flex items-center justify-between">
+      <div className="flex items-center gap-4">
         <span className="text-[#111111] text-body">©Sportsee</span>
         <span className="text-[#111111] text-body">Tous droits réservés</span>
       </div>
